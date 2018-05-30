@@ -16,6 +16,8 @@ public class MenuPaneController {
 		SendFundsPaneController sendFundsPaneController; 
 		HistoryPane historyPane;
 		HistoryPaneController historyPaneController;
+		BlockExplorerPane blockExplorerPane;
+		BlockExplorerPaneController blockExplorerPaneController;
 		
 		// Sets the selected text white (Active Tab)
 		public void setTextColor(String selectedButton){
@@ -30,6 +32,7 @@ public class MenuPaneController {
 				}
 		}
 		
+		// Singleton Pattern
 		public MenuPaneController() {
 			if (overviewPane == null) {
 				overviewPane = new OverviewPane();
@@ -48,6 +51,12 @@ public class MenuPaneController {
 			}
 			if (historyPaneController == null) {
 				historyPaneController = new HistoryPaneController();
+			}
+			if (blockExplorerPane == null) {
+				blockExplorerPane = new BlockExplorerPane();
+			}
+			if (blockExplorerPaneController == null) {
+				blockExplorerPaneController = new BlockExplorerPaneController();
 			}
 		}
 		
@@ -72,6 +81,7 @@ public class MenuPaneController {
 	  	@FXML
 		public void onBlockExplorerClick() {
 	  		setTextColor("Block Explorer");
+	  		mainMenuPane.setCenter(blockExplorerPane); 
 		}
 	  	
 	  	@FXML
