@@ -23,7 +23,6 @@ public class MenuPane extends Application {
         loader.setController(new MenuPaneController());
         loader.setLocation(getClass().getResource("/fxml/MenuPane.fxml"));
         root = loader.load();	
-		
         Scene scene = new Scene(root, 800, 500);
         //Set Windows & Linux task bar and top application bar icons + top bar icon on OSX
         stage.getIcons().add(new Image(MenuPane.class.getResourceAsStream("/images/icon.png")));

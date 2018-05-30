@@ -80,7 +80,10 @@
             </Pane>
          </top>
          <center>
-
-
+		      <Text layoutX="199.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="133.21875">
+		         <font>
+		            <Font size="29.0" />
+		         </font>
+		      </Text>
          </center>
-      </BorderPane>
+</BorderPane>
