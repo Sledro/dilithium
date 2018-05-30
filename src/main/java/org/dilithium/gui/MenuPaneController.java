@@ -18,6 +18,9 @@ public class MenuPaneController {
 		HistoryPaneController historyPaneController;
 		BlockExplorerPane blockExplorerPane;
 		BlockExplorerPaneController blockExplorerPaneController;
+		SettingsPane settingsPane;
+		SettingsPaneController settingsPaneController;
+		
 		
 		// Sets the selected text white (Active Tab)
 		public void setTextColor(String selectedButton){
@@ -57,6 +60,12 @@ public class MenuPaneController {
 			}
 			if (blockExplorerPaneController == null) {
 				blockExplorerPaneController = new BlockExplorerPaneController();
+			}
+			if (settingsPane == null) {
+				settingsPane = new SettingsPane();
+			}
+			if (settingsPaneController == null) {
+				settingsPaneController = new SettingsPaneController();
 			}
 		}
 		
