@@ -14,6 +14,9 @@ public class MenuPaneController {
 		OverviewPane overviewPane;
 		SendFundsPane sendFundsPane;
 		SendFundsPaneController sendFundsPaneController; 
+		HistoryPane historyPane;
+		HistoryPaneController historyPaneController;
+		
 		// Sets the selected text white (Active Tab)
 		public void setTextColor(String selectedButton){
 			buttonsArray = new Text[] {overview,sendFunds,history,blockExplorer,settings,console};
@@ -40,6 +43,12 @@ public class MenuPaneController {
 			if (sendFundsPaneController == null) {
 				sendFundsPaneController = new SendFundsPaneController();
 			}
+			if (historyPane == null) {
+				historyPane = new HistoryPane();
+			}
+			if (historyPaneController == null) {
+				historyPaneController = new HistoryPaneController();
+			}
 		}
 		
 	  	@FXML
@@ -57,6 +66,7 @@ public class MenuPaneController {
 	  	@FXML
 		public void onHistoryClick() {
 	  		setTextColor("History");
+	  		mainMenuPane.setCenter(historyPane); 
 		}
 	  	
 	  	@FXML
