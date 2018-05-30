@@ -21,6 +21,7 @@ package org.dilithium;
 
 import java.security.Security;
 import java.util.logging.Level;
+import javafx.application.Application;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.dilithium.cli.Commander;
@@ -29,6 +30,7 @@ import org.dilithium.core.Node;
 import org.dilithium.core.Wallet;
 import org.dilithium.db.Context;
 import org.dilithium.util.Log;
+import org.dilithium.gui.MenuPane;;
 
 /**
  * This is the class that is run when the program is started.
@@ -63,13 +65,18 @@ public class Start {
         localNode = new Node();
         Log.log(Level.INFO, "\nLocalNode: " + localNode.toString());
         
+        /* Launch GUI */
+        Application.launch(MenuPane.class, args);
+        Log.log(Level.INFO, "\nGraphical User Interface Launched. ");
+        
         /*Test */
         //Setup cli
         Log.sendCLIStartupMessage();
-        
+ 
         Commander commander = new Commander();
         commander.listen();
-   
+
+
         
     }
     
