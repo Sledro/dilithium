@@ -12,7 +12,8 @@ public class MenuPaneController {
 		@FXML BorderPane mainMenuPane;
 		OverviewPaneController overviewPaneController;
 		OverviewPane overviewPane;
-		
+		SendFundsPane sendFundsPane;
+		SendFundsPaneController sendFundsPaneController; 
 		// Sets the selected text white (Active Tab)
 		public void setTextColor(String selectedButton){
 			buttonsArray = new Text[] {overview,sendFunds,history,blockExplorer,settings,console};
@@ -33,17 +34,24 @@ public class MenuPaneController {
 			if (overviewPaneController == null) {
 				overviewPaneController = new OverviewPaneController();
 			}
+			if (sendFundsPane == null) {
+				sendFundsPane = new SendFundsPane();
+			}
+			if (sendFundsPaneController == null) {
+				sendFundsPaneController = new SendFundsPaneController();
+			}
 		}
 		
 	  	@FXML
 		public void onOverviewClick() {
 	  		setTextColor("Overview");
+	  		mainMenuPane.setCenter(overviewPane); 
 		}
 	  	
 	  	@FXML
 		public void onSendFundsClick() {
 	  		setTextColor("Send Funds");
-	  		mainMenuPane.setCenter(overviewPane); 
+	  		mainMenuPane.setCenter(sendFundsPane); 
 		}
 	 
 	  	@FXML
