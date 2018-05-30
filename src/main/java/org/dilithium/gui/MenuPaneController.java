@@ -20,7 +20,8 @@ public class MenuPaneController {
 		BlockExplorerPaneController blockExplorerPaneController;
 		SettingsPane settingsPane;
 		SettingsPaneController settingsPaneController;
-		
+		ConsolePane consolePane;
+		ConsolePaneController consolePaneController;
 		
 		// Sets the selected text white (Active Tab)
 		public void setTextColor(String selectedButton){
@@ -67,6 +68,12 @@ public class MenuPaneController {
 			if (settingsPaneController == null) {
 				settingsPaneController = new SettingsPaneController();
 			}
+			if (consolePane == null) {
+				consolePane = new ConsolePane();
+			}
+			if (consolePaneController == null) {
+				consolePaneController = new ConsolePaneController();
+			}
 		}
 		
 	  	@FXML
@@ -96,10 +103,12 @@ public class MenuPaneController {
 	  	@FXML
 		public void onSettingsClick() {
 	  		setTextColor("Settings");
+	  		mainMenuPane.setCenter(settingsPane); 
 		}
 	  	
 	  	@FXML
 		public void onConsoleClick() {
 	  		setTextColor("Console");
+	  		mainMenuPane.setCenter(consolePane); 
 		}
 }
