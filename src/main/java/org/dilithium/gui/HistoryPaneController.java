@@ -22,8 +22,5 @@ public class HistoryPaneController {
 	public void setOverviewPane(HistoryPane historyPane) {
 		this.HistoryPane = historyPane;
 	}
-	
-	
-	
-	
+
 }

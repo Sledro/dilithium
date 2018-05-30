@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class SendFundsPane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the SendFundsPane, links it to its fxml
 	 */
 	public SendFundsPane() {
 
@@ -26,7 +26,7 @@ public class SendFundsPane extends AnchorPane {
 		controller.setMainApp(this);
 		
 
-		System.out.println("SendFundsController: Constructor");
+		System.out.println("SendFundsPane: Constructor Called");
 
 	}
 	

@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class BlockExplorerPane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the BlockExplorerPane, links it to its fxml
 	 */
 	public BlockExplorerPane() {
 
@@ -26,7 +26,7 @@ public class BlockExplorerPane extends AnchorPane {
 		controller.setMainApp(this);
 		
 
-		System.out.println("BlockExplorerPaneController: Constructor");
+		System.out.println("BlockExplorerPane: Constructor Called");
 
 	}
 	

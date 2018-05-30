@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class OverviewPane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the OverviewPane, links it to its fxml
 	 */
 	public OverviewPane() {
 
@@ -26,7 +26,7 @@ public class OverviewPane extends AnchorPane {
 		controller.setMainApp(this);
 		
 
-		System.out.println("OverviewPaneCreated: Constructor");
+		System.out.println("OverviewPane: Constructor Called");
 
 	}
 	

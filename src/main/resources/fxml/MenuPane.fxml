@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -10,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="mainMenuPane" layoutY="-1.0" prefHeight="500.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" >
+<BorderPane fx:id="mainMenuPane" layoutY="-1.0" prefHeight="500.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
          <left>
             <Pane prefHeight="440.0" prefWidth="180.0" style="-fx-background-color: #444b66;" BorderPane.alignment="CENTER">
                <children>
@@ -50,21 +48,21 @@
                   <FontAwesomeIconView fill="#51B5E7" glyphName="SEARCH" layoutX="14.0" layoutY="158.0" size="22.0" wrappingWidth="17.21874825656414" />
                   <FontAwesomeIconView fill="#51B5E7" glyphName="GEAR" layoutX="14.0" layoutY="198.0" size="22.0" wrappingWidth="17.21874825656414" />
                   <FontAwesomeIconView fill="#51B5E7" glyphName="CODE" layoutX="14.0" layoutY="238.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView fill="#51B5E7" glyphName="GITHUB" layoutX="21.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView fill="#51B5E7" glyphName="TWITTER" layoutX="81.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView fill="#51B5E7" glyphName="FACEBOOK" layoutX="140.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView onMouseClicked="#onGithubClick" fill="#51B5E7" glyphName="GITHUB" layoutX="21.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView onMouseClicked="#onTwitterClick" fill="#51B5E7" glyphName="TWITTER" layoutX="81.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView onMouseClicked="#onFacebookClick" fill="#51B5E7" glyphName="FACEBOOK" layoutX="140.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
                  </children>
             </Pane>
          </left>
          <top>
             <Pane prefHeight="60.0" prefWidth="637.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="#444b66" layoutX="615.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="201.21875">
+                  <Text fill="#444b66" layoutX="583.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="201.21875">
                      <font>
                         <Font name="Apple Symbols" size="19.0" />
                      </font>
                   </Text>
-                  <Text fill="#444b66" layoutX="615.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="201.21875">
+                  <Text fill="#444b66" layoutX="583.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="201.21875">
                      <font>
                         <Font name="Apple Symbols" size="19.0" />
                      </font>

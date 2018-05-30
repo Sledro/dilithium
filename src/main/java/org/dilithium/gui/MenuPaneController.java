@@ -1,5 +1,11 @@
 package org.dilithium.gui;
 
+import java.awt.Desktop;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
@@ -10,6 +16,7 @@ public class MenuPaneController {
 		@FXML private Text overview, sendFunds, history, blockExplorer, settings, console;
 		@FXML private Text[] buttonsArray;
 		@FXML BorderPane mainMenuPane;
+		
 		OverviewPaneController overviewPaneController;
 		OverviewPane overviewPane;
 		SendFundsPane sendFundsPane;
@@ -36,11 +43,34 @@ public class MenuPaneController {
 				}
 		}
 		
+		//Open Github, Twitter or Facebook Links is users default browser
+		public static boolean openWebpage(URI uri) {
+		    Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+		    if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
+		        try {
+		            desktop.browse(uri);
+		            return true;
+		        } catch (Exception e) {
+		            e.printStackTrace();
+		        }
+		    }
+		    return false;
+		}
+
+		public static boolean openWebpage(URL url) {
+		    try {
+		        return openWebpage(url.toURI());
+		    } catch (URISyntaxException e) {
+		        e.printStackTrace();
+		    }
+		    return false;
+		}
+		
 		// Singleton Pattern
 		public MenuPaneController() {
 			if (overviewPane == null) {
 				overviewPane = new OverviewPane();
-			}
+			} 
 			if (overviewPaneController == null) {
 				overviewPaneController = new OverviewPaneController();
 			}
@@ -111,4 +141,35 @@ public class MenuPaneController {
 	  		setTextColor("Console");
 	  		mainMenuPane.setCenter(consolePane); 
 		}
+	  	
+	  	@FXML
+		public void onGithubClick() {
+	  		try {
+				openWebpage(new URL("https://github.com/CryptoKass/dilithium"));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	  	
+	  	@FXML
+		public void onTwitterClick() {
+	  		try {
+				openWebpage(new URL("https://github.com/CryptoKass/dilithium"));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	  	
+	  	@FXML
+		public void onFacebookClick() {
+	  		try {
+				openWebpage(new URL("https://github.com/CryptoKass/dilithium"));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	  	
 }

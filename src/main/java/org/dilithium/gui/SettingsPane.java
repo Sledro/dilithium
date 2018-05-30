@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class SettingsPane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the SettingsPane, links it to its fxml
 	 */
 	public SettingsPane() {
 
@@ -26,7 +26,7 @@ public class SettingsPane extends AnchorPane {
 		controller.setMainApp(this);
 		
 
-		System.out.println("SettingsPane: Constructor");
+		System.out.println("SettingsPane: Constructor Called");
 
 	}
 	

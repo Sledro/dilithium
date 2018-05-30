@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class ConsolePane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the ConsolePane, links it to its fxml
 	 */
 	public ConsolePane() {
 

@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 public class HistoryPane extends AnchorPane {
 	
 	/**
-	 * Constructor - Creates the Connection Pane, links it to its fxml
+	 * Constructor - Creates the ConsolePane, links it to its fxml
 	 */
 	public HistoryPane() {
 
@@ -26,7 +26,7 @@ public class HistoryPane extends AnchorPane {
 		controller.setMainApp(this);
 		
 
-		System.out.println("HistoryPaneController: Constructor");
+		System.out.println("ConsolePane: Constructor Called");
 
 	}
 	
