@@ -41,7 +41,7 @@ public class MenuPane extends Application {
         }
         
         stage.setTitle("Dilithium");
-        //stage.setResizable(false);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

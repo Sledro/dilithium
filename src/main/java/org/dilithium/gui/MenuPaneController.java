@@ -38,15 +38,12 @@ public class MenuPaneController {
 	  	@FXML
 		public void onOverviewClick() {
 	  		setTextColor("Overview");
-	  		mainMenuPane.setCenter(overviewPane);
 		}
 	  	
 	  	@FXML
 		public void onSendFundsClick() {
 	  		setTextColor("Send Funds");
-	  		
-
-	  	    
+	  		mainMenuPane.setCenter(overviewPane); 
 		}
 	 
 	  	@FXML
