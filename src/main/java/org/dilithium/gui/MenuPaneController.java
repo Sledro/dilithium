@@ -21,7 +21,7 @@ public class MenuPaneController {
 					  button.setFill(Color.WHITE);
 				  }
 				  else {
-					  button.setFill(Color.GREY);
+					  button.setFill(Color.DARKGREY);
 				  }
 				}
 		}
