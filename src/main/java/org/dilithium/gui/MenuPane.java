@@ -30,7 +30,8 @@ public class MenuPane extends Application {
         try {
             URL iconURL = MenuPane.class.getResource("/images/icon.png");
             java.awt.Image image = new ImageIcon(iconURL).getImage();
-            com.apple.eawt.Application.getApplication().setDockIconImage(image);
+            //Below import cannot be found on windows so disabled for now. (Mac taskbar icon disabled.)
+            //com.apple.eawt.Application.getApplication().setDockIconImage(image);
         } catch (Exception e) {
             // Won't work on Windows or Linux.
         }
