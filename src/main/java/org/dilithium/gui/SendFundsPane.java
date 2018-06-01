@@ -24,9 +24,6 @@ public class SendFundsPane extends AnchorPane {
 		// Give the controller access to the main app.
 		SendFundsPaneController controller = (SendFundsPaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("SendFundsPane: Constructor Called");
 
 	}
 	

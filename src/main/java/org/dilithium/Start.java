@@ -45,10 +45,10 @@ public class Start {
     /* This method is run when the program first starts */
     public static void main(String[] args) {
         Log.sendStartupMessage();
-        
+
         /* Set default settings */
         config = NodeSettings.getDefault();
-        
+
         /* Setup bouncey castle as security provider */
         Security.addProvider(new BouncyCastleProvider());
         
@@ -56,23 +56,30 @@ public class Start {
          * will contain the local state of blocks and accounts*/
         localContext = new Context();
         Log.log(Level.INFO, "\nLocalContext: " + localContext.toString());
-        
+
         /* Setup temp local wallet */
         localWallet = new Wallet();
         Log.log(Level.INFO, "\nLocalWallet: " + localWallet.toString(localContext));
-       
+
         /* Setup local Node */
         localNode = new Node();
         Log.log(Level.INFO, "\nLocalNode: " + localNode.toString());
-        
-        /* Launch GUI */
-        Application.launch(MenuPane.class, args);
-        Log.log(Level.INFO, "\nGraphical User Interface Launched. ");
-        
+
+        /* Launch GUI in its own thread */
+        Thread t1 = new Thread(new Runnable() {
+            public void run()
+            {
+                Log.log(Level.INFO, "\nGraphical User Interface Launched. \n");
+                /* Launch GUI */
+                Application.launch(MenuPane.class, args);
+            }});
+        t1.start();
+
         /*Test */
         //Setup cli
         Log.sendCLIStartupMessage();
- 
+
+
         Commander commander = new Commander();
         commander.listen();
 

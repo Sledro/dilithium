@@ -24,9 +24,6 @@ public class OverviewPane extends AnchorPane {
 		// Give the controller access to the main app.
 		OverviewPaneController controller = (OverviewPaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("OverviewPane: Constructor Called");
 
 	}
 	

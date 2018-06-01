@@ -24,9 +24,6 @@ public class SettingsPane extends AnchorPane {
 		// Give the controller access to the main app.
 		SettingsPaneController controller = (SettingsPaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("SettingsPane: Constructor Called");
 
 	}
 	

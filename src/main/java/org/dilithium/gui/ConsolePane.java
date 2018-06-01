@@ -24,9 +24,6 @@ public class ConsolePane extends AnchorPane {
 		// Give the controller access to the main app.
 		ConsolePaneController controller = (ConsolePaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("ConsolePane: Constructor");
 
 	}
 	

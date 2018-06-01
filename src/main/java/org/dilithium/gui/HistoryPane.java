@@ -24,9 +24,6 @@ public class HistoryPane extends AnchorPane {
 		// Give the controller access to the main app.
 		HistoryPaneController controller = (HistoryPaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("ConsolePane: Constructor Called");
 
 	}
 	

@@ -1,9 +1,11 @@
 package org.dilithium.gui;
 
 import java.io.IOException;
+import java.util.logging.Level;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+import org.dilithium.util.Log;
 
 public class BlockExplorerPane extends AnchorPane {
 	
@@ -24,10 +26,6 @@ public class BlockExplorerPane extends AnchorPane {
 		// Give the controller access to the main app.
 		BlockExplorerPaneController controller = (BlockExplorerPaneController) fxmlLoader.getController();
 		controller.setMainApp(this);
-		
-
-		System.out.println("BlockExplorerPane: Constructor Called");
-
 	}
 	
 }
