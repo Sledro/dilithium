@@ -14,32 +14,32 @@
                <children>
                   <Text fx:id="overview" fill="WHITE" layoutX="46.0" layoutY="40.0" onMouseClicked="#onOverviewClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="182.21875">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <Text fx:id="sendFunds" fill="#9d9b9b" layoutX="46.0" layoutY="80.0" onMouseClicked="#onSendFundsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Funds" wrappingWidth="182.21875381469727">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <Text fx:id="history" fill="#9d9b9b" layoutX="46.0" layoutY="120.0" onMouseClicked="#onHistoryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="182.21875">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <Text fx:id="blockExplorer" fill="#9d9b9b" layoutX="46.0" layoutY="160.0" onMouseClicked="#onBlockExplorerClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Block Explorer" wrappingWidth="181.21875">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <Text fx:id="settings" fill="#9d9b9b" layoutX="46.0" layoutY="200.0" onMouseClicked="#onSettingsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="162.21875">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <Text fx:id="console" fill="#9d9b9b" layoutX="46.0" layoutY="240.0" onMouseClicked="#onConsoleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Console" wrappingWidth="181.21875">
                      <font>
-                        <Font name="Apple Symbols" size="24.0" />
+                        <Font name="Arial" size="18.0" />
                      </font>
                   </Text>
                   <FontAwesomeIconView fill="#51B5E7" glyphName="HOME" layoutX="14.0" layoutY="40.0" size="20" wrappingWidth="17.21874825656414" />
@@ -57,14 +57,14 @@
          <top>
             <Pane prefHeight="60.0" prefWidth="637.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="#444b66" layoutX="539.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="346.21875">
+                  <Text fill="#444b66" layoutX="657.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="346.21875">
                      <font>
-                        <Font name="Apple Symbols" size="19.0" />
+                        <Font name="Arial" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="#444b66" layoutX="539.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="358.21875">
+                  <Text fill="#444b66" layoutX="657.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="235.21875">
                      <font>
-                        <Font name="Apple Symbols" size="19.0" />
+                        <Font name="Arial" size="14.0" />
                      </font>
                   </Text>
                   <Pane prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #51B5E7;">
