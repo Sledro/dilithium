@@ -8,36 +8,36 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="mainMenuPane" layoutY="-1.0" prefHeight="500.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="mainMenuPane" layoutY="-1.0" prefHeight="500.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
          <left>
-            <Pane prefHeight="440.0" prefWidth="180.0" style="-fx-background-color: #444b66;" BorderPane.alignment="CENTER">
+            <Pane prefHeight="440.0" prefWidth="210.0" style="-fx-background-color: #444b66;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fx:id="overview" fill="WHITE" layoutX="48.0" layoutY="37.0" onMouseClicked="#onOverviewClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="83.21875">
+                  <Text fx:id="overview" fill="#9d9b9b" layoutX="49.0" layoutY="39.0" onMouseClicked="#onOverviewClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="163.21875">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="sendFunds" fill="#9d9b9b" layoutX="48.0" layoutY="74.0" onMouseClicked="#onSendFundsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Funds" wrappingWidth="120.21875381469727">
+                  <Text fx:id="sendFunds" fill="#9d9b9b" layoutX="49.0" layoutY="73.0" onMouseClicked="#onSendFundsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Funds" wrappingWidth="163.21875381469727">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="history" fill="#9d9b9b" layoutX="48.0" layoutY="114.0" onMouseClicked="#onHistoryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="83.21875">
+                  <Text fx:id="history" fill="#9d9b9b" layoutX="49.0" layoutY="113.0" onMouseClicked="#onHistoryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="162.21875">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="blockExplorer" fill="#9d9b9b" layoutX="48.0" layoutY="156.0" onMouseClicked="#onBlockExplorerClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Block Explorer" wrappingWidth="120.21875">
+                  <Text fx:id="blockExplorer" fill="#9d9b9b" layoutX="48.0" layoutY="155.0" onMouseClicked="#onBlockExplorerClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Block Explorer" wrappingWidth="164.21875">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="settings" fill="#9d9b9b" layoutX="48.0" layoutY="196.0" onMouseClicked="#onSettingsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="120.21875">
+                  <Text fx:id="settings" fill="#9d9b9b" layoutX="49.0" layoutY="195.0" onMouseClicked="#onSettingsClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="162.21875">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="console" fill="#9d9b9b" layoutX="48.0" layoutY="236.0" onMouseClicked="#onConsoleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Console" wrappingWidth="120.21875">
+                  <Text fx:id="console" fill="#9d9b9b" layoutX="48.0" layoutY="235.0" onMouseClicked="#onConsoleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Console" wrappingWidth="163.21875">
                      <font>
                         <Font name="Apple Symbols" size="24.0" />
                      </font>
@@ -48,26 +48,26 @@
                   <FontAwesomeIconView fill="#51B5E7" glyphName="SEARCH" layoutX="14.0" layoutY="158.0" size="22.0" wrappingWidth="17.21874825656414" />
                   <FontAwesomeIconView fill="#51B5E7" glyphName="GEAR" layoutX="14.0" layoutY="198.0" size="22.0" wrappingWidth="17.21874825656414" />
                   <FontAwesomeIconView fill="#51B5E7" glyphName="CODE" layoutX="14.0" layoutY="238.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView onMouseClicked="#onGithubClick" fill="#51B5E7" glyphName="GITHUB" layoutX="21.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView onMouseClicked="#onTwitterClick" fill="#51B5E7" glyphName="TWITTER" layoutX="81.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
-                  <FontAwesomeIconView onMouseClicked="#onFacebookClick" fill="#51B5E7" glyphName="FACEBOOK" layoutX="140.0" layoutY="419.0" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView fill="#51B5E7" glyphName="GITHUB" layoutX="39.0" layoutY="419.0" onMouseClicked="#onGithubClick" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView fill="#51B5E7" glyphName="TWITTER" layoutX="96.0" layoutY="419.0" onMouseClicked="#onTwitterClick" size="22.0" wrappingWidth="17.21874825656414" />
+                  <FontAwesomeIconView fill="#51B5E7" glyphName="FACEBOOK" layoutX="147.0" layoutY="419.0" onMouseClicked="#onFacebookClick" size="22.0" wrappingWidth="17.21874825656414" />
                  </children>
             </Pane>
          </left>
          <top>
             <Pane prefHeight="60.0" prefWidth="637.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="#444b66" layoutX="583.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="201.21875">
+                  <Text fill="#444b66" layoutX="547.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DTC Balance: 5.345634 dTC" wrappingWidth="295.21875">
                      <font>
                         <Font name="Apple Symbols" size="19.0" />
                      </font>
                   </Text>
-                  <Text fill="#444b66" layoutX="583.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="201.21875">
+                  <Text fill="#444b66" layoutX="547.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD Balance: $27.35" wrappingWidth="308.21875">
                      <font>
                         <Font name="Apple Symbols" size="19.0" />
                      </font>
                   </Text>
-                  <Pane prefHeight="60.0" prefWidth="180.0" style="-fx-background-color: #51B5E7;">
+                  <Pane prefHeight="60.0" prefWidth="210.0" style="-fx-background-color: #51B5E7;">
                      <children>
                         <ImageView fitHeight="51.0" fitWidth="134.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                            <image>
